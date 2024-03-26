@@ -1,0 +1,22 @@
+﻿Below is a glossary of definitions for the variables you will find in the dataset: 
+
+
+DELIVERY_UUID: Unique Identifier for the delivery
+DELIV_CREATED_AT: Timestamp the delivery was created at
+DELIV_STORE_NAME: Store the delivery was placed at
+DELIV_DASHER_ID: Unique identifier for the dasher
+DELIV_SUBMARKET: Location the delivery took place in
+DELIV_D2R: How long it took the dasher to get from their starting location to the store, in minutes
+DELIV_IS_20_MIN_LATE (TRUE/FALSE): field denoting whether or not the Dx was late by 20 minutes in delivering the items
+DELIV_CLAT: How many minutes elapsed between when the order was placed, and when the ultimate dasher accepted the delivery
+DELIV_CANCELLED_AT: Timestamp for when the delivery was canceled, if at all
+DELIV_MISSING_INCORRECT_REPORT (TRUE/FALSE): flag for whether the consumer submitted a complaint saying that their order had a missing or incorrect item. Flagged at the Delivery level.
+WAS_REQUESTED: [0 or 1] for whether this row is for an item that was originally ordered by the customer
+WAS_MISSING: [0 or 1] = 1 if this row is for an item that was not found by the dasher
+WAS_SUBBED: [0 or 1] for whether this row is for an item that was substituted
+WAS_FOUND: [0 or 1] = 1 if this row is for an item that was found by the dasher
+ITEM_NAME: Name of the originally requested item
+ITEM_PRICE_CENTS: Price of the item in cents
+ITEM_CATEGORY: Category of the original item
+SUBSTITUTE_ITEM_NAME: If there was a substitute, the name of that substitute item
+SUBSTITUTE_ITEM_CATEGORY: If there was a substitute, the category of that substitute
